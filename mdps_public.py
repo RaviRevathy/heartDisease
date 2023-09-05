@@ -26,6 +26,8 @@ if (selected == 'Home'):
     col1, col2 = st.columns(2)
     with col1:
         st.write("Welcome to the bioline")
+    with col2: 
+        st.image("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pxfuel.com%2Fen%2Fquery%3Fq%3Dcardiology&psig=AOvVaw2qKqk4PkkcbCRqmgWJUSAc&ust=1694040468037000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCIDj8dPGlIEDFQAAAAAdAAAAABAa")
         
 if (selected == 'Heart Disease Prediction'):
 
