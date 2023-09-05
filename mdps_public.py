@@ -21,12 +21,12 @@ with st.sidebar:
                           default_index=0)
 
 # Heart Disease Prediction Page
-if (selected == 'Home') {
+if (selected == 'Home'):
     st.title('Heart Disease Prediction')
     col1, col2 = st.columns(2)
     with col1:
         st.write("Welcome to the bioline")
-}
+        
 if (selected == 'Heart Disease Prediction'):
 
     # page title
