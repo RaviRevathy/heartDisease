@@ -17,7 +17,7 @@ with st.sidebar:
     selected = option_menu('Disease Prediction System',
 
                           ['Home', 'Heart Disease Prediction'],
-                          icons=['home', 'heart'],
+                          icons=['house', 'heart'],
                           default_index=0)
 
 # Heart Disease Prediction Page
