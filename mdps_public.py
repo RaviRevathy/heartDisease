@@ -29,7 +29,7 @@ if (selected == 'Home'):
         st.write("209 out of 1 lakh people are dying out of Heart Disease")
         st.write("Start taking care of your heart before it falls apart.")
         st.image("desktop-wallpaper-cardio-cardiology.jpg")
-        st.image("healthy-heart.avif")
+        st.image("healthy-heart.jpg")
     with col2: 
         st.image("female-doctor.jpg")
         
