@@ -31,7 +31,7 @@ if (selected == 'Home'):
         st.image("desktop-wallpaper-cardio-cardiology.jpg")
         st.image("healthy-heart.jpg")
     with col2: 
-        st.image("female-doctor.jpg")
+        st.image("doctor.jpg")
         
         
 if (selected == 'Heart Disease Prediction'):
