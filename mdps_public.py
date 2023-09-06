@@ -47,6 +47,7 @@ if (selected == 'Heart Disease Prediction'):
 
     with col2:
         sex = st.selectbox('Gender',('Male', 'Female'))
+        sex = 1 if sex == 'Male' else 0
 
     with col3:
         cp = st.text_input('Chest Pain types')
