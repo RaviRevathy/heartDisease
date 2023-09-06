@@ -25,14 +25,17 @@ if (selected == 'Home'):
     st.title('Heart Disease Prediction')
     col1, col2 = st.columns(2)
     with col1:
-        st.write("Heart disease has been one of the leading cause of death since a past few years.\n")
-        st.write("209 out of 1 lakh people are dying out of Heart Disease")
-        st.write("Start taking care of your heart before it falls apart.")
-        colu1, colu2 = st.beta_columns(2)
-        with colu1:
-            st.image("desktop-wallpaper-cardio-cardiology.jpg")
-        with colu2:
-            st.image("healthy-heart.avif")
+        row1, row2 = st.rows(2)
+        with row1:
+            st.write("Heart disease has been one of the leading cause of death since a past few years.\n")
+            st.write("209 out of 1 lakh people are dying out of Heart Disease")
+            st.write("Start taking care of your heart before it falls apart.")
+        with row2:
+            colu1, colu2 = st.beta_columns(2)
+            with colu1:
+                st.image("desktop-wallpaper-cardio-cardiology.jpg")
+            with colu2:
+                st.image("healthy-heart.avif")
     with col2: 
         st.image("female-doctor.jpg")
         
