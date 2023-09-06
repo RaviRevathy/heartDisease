@@ -32,7 +32,7 @@ if (selected == 'Home'):
         
     with col2: 
         st.image("doctor.jpg")
-        st.image("desktop-wallpaper-cardio-cardiology.jpg", width = 200, height = 100)
+        st.image("desktop-wallpaper-cardio-cardiology.jpg", width = 200)
         
         
 if (selected == 'Heart Disease Prediction'):
