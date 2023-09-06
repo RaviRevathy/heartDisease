@@ -107,9 +107,9 @@ if (selected == 'Heart Disease Prediction'):
 
     with col2:
         options = {
-            'error' = 0,
+            'error': 0,
             'fixed defect': 1,
-            'normal' = 2,
+            'normal': 2,
             'reversable defect': 3
         }
         thal = st.selectbox('thal', list(options.keys()))
