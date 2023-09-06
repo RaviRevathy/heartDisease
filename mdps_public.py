@@ -23,7 +23,7 @@ with st.sidebar:
 # Heart Disease Prediction Page
 if (selected == 'Home'):
     st.title('Heart Disease Prediction')
-    col1, col2 = st.columns(2)
+    col1, col2 = st.columns(2,1)
     with col1:
         st.write("Heart disease has been one of the leading cause of death since a past few years.\n")
         st.write("209 out of 1 lakh people are dying out of Heart Disease")
