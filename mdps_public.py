@@ -28,8 +28,11 @@ if (selected == 'Home'):
         st.write("Heart disease has been one of the leading cause of death since a past few years.\n")
         st.write("209 out of 1 lakh people are dying out of Heart Disease")
         st.write("Start taking care of your heart before it falls apart.")
-        st.image("desktop-wallpaper-cardio-cardiology.jpg")
-        st.image("healthy-heart.jpg")
+        left_column, right_column = st.beta_columns(2)
+        with left_column:
+            st.image("desktop-wallpaper-cardio-cardiology.jpg")
+        with right_column:
+            st.image("healthy-heart.jpg")
     with col2: 
         st.image("doctor.jpg")
         
