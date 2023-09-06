@@ -17,7 +17,7 @@ with st.sidebar:
     selected = option_menu('Disease Prediction System',
 
                           ['Home', 'Heart Disease Prediction'],
-                          icons=['heart'],
+                          icons=['home', 'heart'],
                           default_index=0)
 
 # Heart Disease Prediction Page
@@ -25,9 +25,17 @@ if (selected == 'Home'):
     st.title('Heart Disease Prediction')
     col1, col2 = st.columns(2)
     with col1:
-        st.write("Welcome to the bioline")
+        st.write("Heart disease has been one of the leading cause of death since a past few years.\n")
+        st.write("209 out of 1 lakh people are dying out of Heart Disease")
+        st.write("Start taking care of your heart before it falls apart.")
+        colu1, colu2 = st.columns(2)
+        with colu1:
+            st.image("desktop-wallpaper-cardio-cardiology.jpg")
+        with colu2:
+            st.image("healthy-heart.avif")
     with col2: 
-        st.image("desktop-wallpaper-cardio-cardiology.jpg")
+        st.image("female-doctor.jpg")
+        
         
 if (selected == 'Heart Disease Prediction'):
 
