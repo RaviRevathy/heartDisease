@@ -79,7 +79,7 @@ if (selected == 'Heart Disease Prediction'):
             'ST-T wave abnormality': 1,
             'left ventricular hypertrophy': 2
         }
-        restecg = st.selectbox('Resting Electrocardiographic results', list(options.key()))
+        restecg = st.selectbox('Resting Electrocardiographic results', list(options.keys()))
 
     with col2:
         thalach = st.text_input('Maximum Heart Rate achieved 60 - 220')
@@ -89,7 +89,7 @@ if (selected == 'Heart Disease Prediction'):
             'yes': 1, 
             'no': 0
         }
-        exang = st.selectbox('Exercise Induced Angina', list(options.key()))
+        exang = st.selectbox('Exercise Induced Angina', list(options.keys()))
 
     with col1:
         oldpeak = st.text_input('ST depression induced by exercise 0 - 6')
