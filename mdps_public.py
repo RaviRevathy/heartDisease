@@ -62,10 +62,10 @@ if (selected == 'Heart Disease Prediction'):
         cp = st.selectbox('Chest Pain types', list(options.keys()))
 
     with col1:
-        trestbps = st.text_input('Resting Blood Pressure 90-200')
+        trestbps = st.text_input('Resting Blood Pressure (90-200)')
 
     with col2:
-        chol = st.text_input('Serum Cholestoral in mg/dl 100-600')
+        chol = st.text_input('Serum Cholestoral in mg/dl (100-600)')
 
     with col3:
         options = {
@@ -82,7 +82,7 @@ if (selected == 'Heart Disease Prediction'):
         restecg = st.selectbox('Resting Electrocardiographic results', list(options.keys()))
 
     with col2:
-        thalach = st.text_input('Maximum Heart Rate achieved 60 - 220')
+        thalach = st.text_input('Maximum Heart Rate (60 - 220)')
 
     with col3:
         options = {
@@ -92,7 +92,7 @@ if (selected == 'Heart Disease Prediction'):
         exang = st.selectbox('Exercise Induced Angina', list(options.keys()))
 
     with col1:
-        oldpeak = st.text_input('ST depression induced by exercise 0 - 6')
+        oldpeak = st.text_input('ST depression induced(0 - 6)')
 
     with col2:
         options = {
@@ -103,7 +103,7 @@ if (selected == 'Heart Disease Prediction'):
         slope = st.selectbox('Slope of the peak exercise ST segment', list(options.keys()))
 
     with col3:
-        ca = st.text_input('Major vessels colored by flourosopy 0 - 3')
+        ca = st.text_input('Major vessels colored flourosopy (0-3)')
 
     with col2:
         options = {
