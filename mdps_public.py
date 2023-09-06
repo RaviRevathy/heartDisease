@@ -25,9 +25,9 @@ if (selected == 'Home'):
     st.title('Heart Disease Prediction')
     col1, col2 = st.columns((2,1))
     with col1:
-        st.write("Heart disease has been one of the leading cause of death since a past few years.\n")
-        st.write("209 out of 1 lakh people are dying out of Heart Disease")
-        st.write("Start taking care of your heart before it falls apart.")
+        st.write("Heart disease are the leading cause of death globally, taking an estimated 17.9 million lives each year. Heart attacks account for 28% deaths in India\n")
+        st.write("For every 1 lakh people there are 209 people who are dying out of Heart Disease. Early and accurate predictions and immediate diagnosis can help you live longer and happier.")
+        st.write("Balanced diet and physical activity can keep your heart more healtier. Start taking care of your heart before it falls apart.")
         st.image("healthy-heart.jpg")
         
     with col2: 
