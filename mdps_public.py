@@ -23,37 +23,17 @@ with st.sidebar:
 # Heart Disease Prediction Page
 if (selected == 'Home'):
     st.title('Heart Disease Prediction')
-    col1, col2 = st.beta_columns((2,1))
+    col1, col2 = st.columns((2,1))
     with col1:
-        st.write("Heart disease has been one of the leading cause of death since a past few years.\n")
-        st.write("209 out of 1 lakh people are dying out of Heart Disease")
-        st.write("Start taking care of your heart before it falls apart.")
-        # left_column, right_column = st.columns(2)
-        # with left_column:
-        #     st.image("desktop-wallpaper-cardio-cardiology.jpg")
-        # with right_column:
-        #     st.image("healthy-heart.jpg")
-        image1_url = 'desktop-wallpaper-cardio-cardiology.jpg'
-        image2_url = 'healthy-heart.jpg'
-
-        # Use HTML and CSS to display images side by side
-        st.markdown(
-            f"""
-            <style>
-                .image-container {{
-                    display: inline-block;
-                    margin-right: 20px;  /* Adjust the margin as needed for spacing */
-                }}
-            </style>
-            <div class="image-container">
-                <img src="{image1_url}" alt="Image 1" width="300">
-            </div>
-            <div class="image-container">
-                <img src="{image2_url}" alt="Image 2" width="300">
-            </div>
-            """,
-            unsafe_allow_html=True
-        )
+        # st.write("Heart disease has been one of the leading cause of death since a past few years.\n")
+        # st.write("209 out of 1 lakh people are dying out of Heart Disease")
+        # st.write("Start taking care of your heart before it falls apart.")
+        left_column, right_column = st.columns(2)
+        with left_column:
+            st.image("desktop-wallpaper-cardio-cardiology.jpg")
+        with right_column:
+            st.image("healthy-heart.jpg")
+        
     with col2: 
         st.image("doctor.jpg")
         
