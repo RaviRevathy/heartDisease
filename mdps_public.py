@@ -46,41 +46,73 @@ if (selected == 'Heart Disease Prediction'):
         age = st.text_input('Age')
 
     with col2:
-        sex = st.selectbox('Gender',('Male', 'Female'))
-        sex = 1 if sex == 'Male' else 0
+        options = {
+            'Male': 1,
+            'Female': 0
+        }
+        sex = st.selectbox('Gender', list(options.keys()))
 
     with col3:
-        cp = st.text_input('Chest Pain types')
+        options = {
+            'typical angina': 0,
+            'atypical angina': 1,
+            'non-anginal pain': 2,
+            'asymptomatic': 3
+        }
+        cp = st.selectbox('Chest Pain types', list(options.keys()))
 
     with col1:
-        trestbps = st.text_input('Resting Blood Pressure')
+        trestbps = st.text_input('Resting Blood Pressure 90-200')
 
     with col2:
-        chol = st.text_input('Serum Cholestoral in mg/dl')
+        chol = st.text_input('Serum Cholestoral in mg/dl 100-600')
 
     with col3:
-        fbs = st.text_input('Fasting Blood Sugar > 120 mg/dl')
-
+        options = {
+            '>120 mg/dl': 1,
+            '<120 mg/dl': 0
+        }
+        fbs = st.selectbox('Fasting Blood Sugar', list(options.keys()))
     with col1:
-        restecg = st.text_input('Resting Electrocardiographic results')
+        options = {
+            'normal': 0,
+            'ST-T wave abnormality': 1,
+            'left ventricular hypertrophy': 2
+        }
+        restecg = st.selectbox('Resting Electrocardiographic results', list(options.key()))
 
     with col2:
-        thalach = st.text_input('Maximum Heart Rate achieved')
+        thalach = st.text_input('Maximum Heart Rate achieved 60 - 220')
 
     with col3:
-        exang = st.text_input('Exercise Induced Angina')
+        options = {
+            'yes': 1, 
+            'no': 0
+        }
+        exang = st.selectbox('Exercise Induced Angina', list(options.key()))
 
     with col1:
-        oldpeak = st.text_input('ST depression induced by exercise')
+        oldpeak = st.text_input('ST depression induced by exercise 0 - 6')
 
     with col2:
-        slope = st.text_input('Slope of the peak exercise ST segment')
+        options = {
+            'upsloping': 0,
+            'flat': 1, 
+            'downsloping': 2
+        }
+        slope = st.selectbox('Slope of the peak exercise ST segment', list(options.keys()))
 
     with col3:
-        ca = st.text_input('Major vessels colored by flourosopy')
+        ca = st.text_input('Major vessels colored by flourosopy 0 - 3')
 
-    with col1:
-        thal = st.text_input('thal: 0 = normal; 1 = fixed defect; 2 = reversable defect')
+    with col2:
+        options = {
+            'error' = 0,
+            'fixed defect': 1,
+            'normal' = 2,
+            'reversable defect': 3
+        }
+        thal = st.selectbox('thal', list(options.keys()))
 
     # code for Prediction
     heart_diagnosis = ''
